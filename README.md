@@ -79,8 +79,8 @@ O projeto contém 33 premissas baseadas em pesquisas educacionais recentes, orga
 
 Para publicar o projeto:
 
-1. **Siga o guia completo:** [GITHUB_SETUP.md](./GITHUB_SETUP.md)
-2. **Resultado:** Site público em `https://seu-usuario.github.io/baralho-premissas`
+1. **Configure o GitHub Pages:** Acesse as configurações do repositório, vá em "Pages" e publique a branch main/root como fonte do site.
+2. **Resultado:** Site público em `https://seu-usuario.github.io/baralho-premissas` -- Altere 'seu-usuario' e 'baralho-premissas' para o nome correto do seu repositório no GitHub.
 
 ### Comandos Rápidos:
 ```bash
@@ -103,3 +103,6 @@ Para contribuir com o projeto:
 ## 📄 Licença
 
 Este projeto é de uso educacional e acadêmico.
+
+## Extras para GitHub Pages
+Recomenda-se criar um arquivo 404.html personalizado na raiz para lidar com erros de navegação em diretórios inexistentes.
