@@ -423,6 +423,15 @@ function closeModal() {
     modal.classList.remove('active');
 }
 
+// Função para alternar tema
+function toggleTheme() {
+    const body = document.body;
+    const btn = document.getElementById('themeToggle');
+    const isLight = body.classList.toggle('light-mode');
+    btn.textContent = isLight ? 'Modo Escuro' : 'Modo Claro';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+}
+
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
     // Event listener para fechar modal clicando fora
@@ -453,5 +462,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Renderização inicial
     renderCards(premissas);
+
+    // Event listener para botão de tema
+    if (document.getElementById('themeToggle')) {
+        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+        // Carrega preferência
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-mode');
+            document.getElementById('themeToggle').textContent = 'Modo Escuro';
+        }
+    }
 });
 

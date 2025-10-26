@@ -12,6 +12,38 @@ body {
     padding: 2rem;
 }
 
+body.light-mode {
+    background: #f4f4f4;
+    color: #111;
+    transition: background 0.3s, color 0.3s;
+}
+h1.light-mode,
+h1.light-mode,
+body.light-mode h1,
+body.light-mode .modal-title { color: #222; }
+
+body.light-mode .container { background: none; }
+
+body.light-mode .card-front,
+body.light-mode .card-back,
+body.light-mode .modal-content {
+    background: #fff;
+    color: #222;
+    border: 1px solid #e0e0e0;
+}
+body.light-mode .premise-text,
+body.light-mode .modal-text { color: #222; }
+body.light-mode .card-category { color: #fff; }
+body.light-mode .search-bar input {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+body.light-mode .btn {
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+body.light-mode .modal { background: rgba(200,200,200,0.8); }
+
 /* Layout principal */
 .container {
     max-width: 1400px;
